@@ -1,0 +1,45 @@
+import edu.princeton.cs.algs4.*;
+import java.util.*;
+
+public class HelloWorld 
+{
+    public static void main(String[] args)
+	{
+        StdOut.println("Hello World!\n");
+		System.out.print("Hello World!\n\n");
+		int t=Math.abs(-1);
+		System.out.println(t+"\n");
+        
+		int i=1,j=1;
+		int a=i++;
+		int b=++j;
+		StdOut.print(a);StdOut.println(b+"\n");
+		
+		i=1;j=1;
+		StdOut.print(i++);StdOut.println(++j+"\n");
+		
+		int[] A=new int[100];
+		StdOut.println(A[0]+"\n");
+		
+		Scanner x=new Scanner(System.in);
+		Scanner y=new Scanner("G:\\java\\binarysearch\\BinarySearch.txt");
+		StdOut.println(x);
+		StdOut.println(y+"\n");
+		
+		Scanner[] X=new Scanner[100];
+		StdOut.println(X[0]+"\n");
+		
+		In z=new In("G:\\java\\binarysearch\\BinarySearch.txt");
+		StdOut.println(z+"\n");
+		
+		In[] Z=new In[100];
+		StdOut.println(Z[0]+"\n");
+		
+		StdOut.print("Type the first integer: ");
+		int O=StdIn.readInt();
+		StdOut.print("Type the second integer: ");
+		int P=StdIn.readInt();
+		int sum=O+P;
+		StdOut.println("Their sum is " + sum);
+	}
+}
