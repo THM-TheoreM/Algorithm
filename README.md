@@ -1,6 +1,6 @@
 #Algorithm
 
-**Introduction** This is algorithm learning based on java. The material is *Algorithm: Fourth Edition* written by Robert Sedgewick and Kevin Wayne, and you can find the sources on http://algs4.cs.princeton.edu/home/. In this learning program, we use notepad++ with nppexec to run java.
+**Introduction** This is algorithm learning based on java. The material is *Algorithm: Fourth Edition* written by Robert Sedgewick and Kevin Wayne. You can find the sources on http://algs4.cs.princeton.edu/home/, and you can find courses on https://www.coursera.org/course/algs4partI and https://www.coursera.org/course/algs4partII. In this learning program, we use notepad++ with nppexec to run java.
 
 **Java**
 
