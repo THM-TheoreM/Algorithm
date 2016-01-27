@@ -14,5 +14,7 @@
     echo ==========编译成功后开始运行========== 
     java -cp "$(CURRENT_DIRECTORY);D:\Program Files\java\jdk\lib\algs4.jar" "$(NAME_PART)"
     
+**Push What** We will push some codes based on this book or our discussion.
+    
     
 
