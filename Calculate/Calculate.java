@@ -1,5 +1,30 @@
 import edu.princeton.cs.algs4.*;
 
+/*
+ * First version:
+ * This is a simplification of expression evaluation.
+ * CalExpNoPareSecond(CalExpNoPareFirst()) calculates an expression without parethesis
+ * CalExp() can calculate an expression with parethesis
+ * However the first one has a heavy read-in task because it uses the string iteration method instead of LZZ's method.
+ * Also there is no stack since I haven't read the corresponding section.
+ *
+ * public class calculate
+ * ------------------------------------------
+ * static String CalExpNoPareFirst(String s)
+ * static String CalExpNoPareSecond(String s)
+ * static String CalExp(String s)
+ */
+ 
+ /*
+  * Second version:
+  * Follow your revise. Have fewer line codes and be more simple. 
+  */
+  
+ /*
+  * Third version:
+  * Simplest version.
+  */
+
 public class Calculate
 {
 	public static String CalExpNoPareFirst(String s)
