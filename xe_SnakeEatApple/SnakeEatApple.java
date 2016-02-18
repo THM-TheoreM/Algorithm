@@ -42,38 +42,36 @@ public class SnakeEatApple
 			index1=0;
 			if(StdDraw.hasNextKeyTyped()==true) a=StdDraw.nextKeyTyped();
 			
-			double x1=x[1];
-			double y1=y[1];
 			double x2=x[2+index2];
 			double y2=y[2+index2];
 			
 			for(int i=2+index2;i>0;i--)
 			{x[i]=x[i-1];y[i]=y[i-1];}
 			
-			if(a=='w' && y1!=y[0]+1)
+			if(a=='w' && y[2]!=y[1]+1)
 			{y[0]++;index1=1;}
 			
-			if(a=='a' && x1!=x[0]-1)
+			if(a=='a' && x[2]!=x[1]-1)
 			{x[0]--;index1=1;}
 			
-			if(a=='s' && y1!=y[0]-1)
+			if(a=='s' && y[2]!=y[1]-1)
 			{y[0]--;index1=1;}
 			
-			if(a=='d' && x1!=x[0]+1)
+			if(a=='d' && x[2]!=x[1]+1)
 			{x[0]++;index1=1;}
 				
-			if(a=='1' || (a!='w' && a!='a' && a!='s' && a!='d') || index1==0)
-			{x[0]=2*x[0]-x1;y[0]=2*y[0]-y1;}
+			if(index1==0)
+			{x[0]=x[1]+(x[1]-x[2]);y[0]=y[1]+(y[1]-y[2]);}
 		
 		    if(x[0]==X && y[0]==Y)
-			{x[2+index2]=x2;y[2+index2]=y2;X=StdRandom.uniform(14)+0.5;Y=StdRandom.uniform(9)+0.5;index2++;}
+			{x[3+index2]=x2;y[3+index2]=y2;X=StdRandom.uniform(14)+0.5;Y=StdRandom.uniform(9)+0.5;index2++;}
 			
 			//judge whether win
-			if(index2==7)
+			if(index2==6)
 			{StdOut.println("win");break;}
 			
 			//judge whether lose
-			for(int i=1;i<3;i++)
+			for(int i=1;i<3+index2;i++)
 				if(x[i]==x[0] && y[i]==y[0]) index3=1;
 			
 			if(x[0]<0 || x[0]>15 || y[0]<0 || y[0]>10 || index3==1)
