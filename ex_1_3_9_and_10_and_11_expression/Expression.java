@@ -8,15 +8,16 @@ which asks the infix expression to be fully parenthesized.
 Actually, this gives the algorithm generalizing Dijkstra's Two-Stack Algorithm on page 129 in the textbook, and can realize a calculator now!
 
 API:
-static String InfixToPostfix(String str)				line 23
-static double EvaluatePostfix(String str)				line 63
-static String PostfixToSimpleInfix(String str)			line 79
-static String InfixToPrefix(String str)					line 108
-static double EvaluatePrefix(String str)				line 155
-static String PrefixToSimpleInfix(String str)			line 171
-static String LeftParenthesesComplete(String str)		line 204
-static double EvaluateSimpleInfix(String str)			line 286
-static String SimpleInfixToInfix(String str)			line 315
+static String InfixToPostfix(String str)				line 25
+static double EvaluatePostfix(String str)				line 65
+static String PostfixToSimpleInfix(String str)			line 81
+static String InfixToPrefix(String str)					line 110
+static double EvaluatePrefix(String str)				line 157
+static String PrefixToSimpleInfix(String str)			line 173
+static String LeftParenthesesComplete(String str)		line 209
+static String LeftParenthesesComplete2(String str)      line 287
+static double EvaluateSimpleInfix(String str)			line 309
+static String SimpleInfixToInfix(String str)			line 337
 */
 public class Expression
 {
@@ -280,6 +281,27 @@ public class Expression
 				str_new[index++]=str[j]+" "+str[++j]+" "+str[++j]+" "+str[++j]+" "+str[++j];
 		}
 		return merge(str_new);//recursive implementation
+	}
+	
+	//A very simple solution given by ZZ Lin using 2 stacks
+	public static String LeftParenthesesComplete2(String str)
+	{
+		String[] s=str.split(" ");
+		Stack<String> operand=new Stack();
+		Stack<String> operator=new Stack();
+		for(int i=0;i<s.length;i++)
+		{
+			if(s[i].equals("+") || s[i].equals("-") || s[i].equals("*") || s[i].equals("/"))
+				operator.push(s[i]);
+			else if(s[i].equals(")"))
+			{
+				String tmp=operand.pop();
+				operand.push("( "+operand.pop()+" "+operator.pop()+" "+tmp+" )");
+			}
+			else//numbers
+				operand.push(s[i]);
+		}
+		return operand.pop();
 	}
 	
 	//Evaluate a simple infix expression with algorithm on page 129 in the textbook
