@@ -12,7 +12,6 @@ public class Sequence
 		return true;
 	}
 	
-	
 	//judge whether a 0~9 sequence can be achieved through situable pop operations on an ordered 0~9 pushed sequence
 	public static boolean isLegalStack(String str)
 	{
@@ -40,7 +39,28 @@ public class Sequence
 		}
 		return true;
 	}
-
+    
+	//judge whether a 0~9 sequence can be achieved through situable pop operations on an ordered 0~9 pushed sequence
+	public static boolean isLegalStack2(String str)
+	{
+		String[] s=str.split(" ");
+		
+		int[] a=new int[10];
+		for(int i=0;i<10;i++)
+			a[i]=Integer.parseInt(s[i]);
+		
+		for(int i=1;i<10;i++)
+		{
+			if(a[i-1]>a[i])
+			{
+				for(int j=a[i]+1;j<a[i-1];j++)
+					if(str.substring(0,2*i-2).indexOf((Integer.toString(j)))==-1) return false;
+			}
+		}  
+		
+		return true;
+	}
+	
 	public static void main(String[] args)
 	{
 		String str="0 1 2 3 4 5 6 7 8 9";
@@ -49,6 +69,7 @@ public class Sequence
 			StdOut.print("NOT ");
 		StdOut.println("be achieved through a queue.");
 		StdOut.println("----------------------");
+		
 		String[] s=new String[8];
 		s[0]="4 3 2 1 0 9 8 7 6 5";
 		s[1]="4 6 8 7 5 3 2 9 0 1";
@@ -62,6 +83,15 @@ public class Sequence
 		{
 			StdOut.print("The sequence\t\""+s[i]+"\"\tcan ");
 			if(!isLegalStack(s[i]))
+				StdOut.print("NOT ");
+			StdOut.println("be achieved through a stack.");
+		}
+		StdOut.println("----------------------");
+		
+		for(int i=0;i<8;i++)
+		{
+			StdOut.print("The sequence\t\""+s[i]+"\"\tcan ");
+			if(!isLegalStack2(s[i]))
 				StdOut.print("NOT ");
 			StdOut.println("be achieved through a stack.");
 		}
