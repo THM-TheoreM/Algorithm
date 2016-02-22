@@ -9,15 +9,16 @@ Actually, this gives the algorithm generalizing Dijkstra's Two-Stack Algorithm o
 
 API:
 static String InfixToPostfix(String str)				line 25
-static double EvaluatePostfix(String str)				line 65
-static String PostfixToSimpleInfix(String str)			line 81
-static String InfixToPrefix(String str)					line 110
-static double EvaluatePrefix(String str)				line 157
-static String PrefixToSimpleInfix(String str)			line 173
-static String LeftParenthesesComplete(String str)		line 209
-static String LeftParenthesesComplete2(String str)      line 287
-static double EvaluateSimpleInfix(String str)			line 309
-static String SimpleInfixToInfix(String str)			line 337
+static String InfixToPostfix2(String str)				line 65
+static double EvaluatePostfix(String str)				line 125
+static String PostfixToSimpleInfix(String str)			line 141
+static String InfixToPrefix(String str)					line 170
+static double EvaluatePrefix(String str)				line 217
+static String PrefixToSimpleInfix(String str)			line 233
+static String LeftParenthesesComplete(String str)		line 269
+static String LeftParenthesesComplete2(String str)      line 347
+static double EvaluateSimpleInfix(String str)			line 369
+static String SimpleInfixToInfix(String str)			line 397
 */
 public class Expression
 {
@@ -59,6 +60,66 @@ public class Expression
 			str_new=str_new+operator.pop()+" ";
 			
 		return str_new.substring(0,str_new.length()-1);//delete the last redudent space in case of troubles in other functions
+	}
+	
+	//transfer an infix arithmetic expression to a postfix expression
+	public static String InfixToPostfix2(String str)
+	{
+		String[] s=str.split(" ");
+		Stack<String> a=new Stack<String>();
+		
+		for(int i=0;i<s.length;i++)
+		{
+			if(s[i].equals(")"))
+			{
+				String b="";
+				
+				while(!(a.peek()).equals("("))
+					b=" "+a.pop()+b;
+				
+				a.pop();
+				a.push(InfixToPostfixWithoutPare(b));
+			}
+			else a.push(s[i]);
+		}
+		
+		String[] c=new String[a.size()];
+		for(int i=0;i<c.length;i++)
+			c[c.length-1-i]=a.pop();
+		
+		return InfixToPostfixWithoutPare(c);
+	}
+	
+	private static String InfixToPostfixWithoutPare(String[] s)
+	{
+		Stack<String> operand=new Stack<String>();
+		Stack<String> operator=new Stack<String>();
+		
+		for(int i=0;i<s.length;i++)
+		{
+			if(s[i].equals("*") || s[i].equals("/"))
+			{
+				operand.push(operand.pop()+" "+s[i+1]+" "+s[i]);
+				i++;
+			}
+			else if(s[i].equals("+") || s[i].equals("-")) operator.push(s[i]);
+			else operand.push(s[i]);
+		}
+		
+		if(operator.isEmpty()) return operand.pop();//without addition and substraction
+		
+		String a="";//with addition or substraction
+		int b=operator.size();
+		for(int i=0;i<b;i++)
+			a=" "+operand.pop()+" "+operator.pop()+a;
+		
+		return operand.pop()+a;
+	}
+	
+	private static String InfixToPostfixWithoutPare(String str)
+	{
+		String[] s=str.split(" ");
+		return InfixToPostfixWithoutPare(s);
 	}
 	
 	//Evaluate a postfix expression
@@ -393,7 +454,7 @@ public class Expression
 		StdOut.println("Omitting the redudent parentheses, we have infix expression\t\""+Expression.SimpleInfixToInfix(simpleinfix)+"\"");
 		StdOut.println("Postfix expression\t\""+postfix+"\"\tequals:\t"+EvaluatePostfix(postfix));
 		StdOut.println("-----------------------------------");
-		infix="1 + ( 2 + 3 ) * 4 - 5";
+		infix="2 + 5 * 3 / 4";//"1 + ( 2 + 3 ) * 4 - 5";
 		String prefix=Expression.InfixToPrefix(infix);
 		StdOut.println("Infix expression\t\""+infix+"\"\tis equivalent to prefix expression\t\""+prefix+"\"");
 		simpleinfix=Expression.PrefixToSimpleInfix(prefix);
@@ -406,5 +467,20 @@ public class Expression
 		simpleinfix=LeftParenthesesComplete(infix);
 		StdOut.println("The complete simple infix expression given by expression without left parentheses\t\""+infix+"\"\tis\t\""+simpleinfix+"\"");
 		StdOut.println("Simple infix expression\t\""+simpleinfix+"\"\tequals:\t"+EvaluateSimpleInfix(simpleinfix));
+		StdOut.println("-----------------------------------");
+		//test LeftParenthesesComplete2	
+		String simpleinfix2=LeftParenthesesComplete2(infix);
+		StdOut.println("The complete simple infix expression given by expression without left parentheses\t\""+infix+"\"\tis\t\""+simpleinfix2+"\"");
+		StdOut.println("Simple infix expression\t\""+simpleinfix2+"\"\tequals:\t"+EvaluateSimpleInfix(simpleinfix2));
+		StdOut.println("-----------------------------------");
+		//test InfixToPostfixWithoutPare
+		infix="1 + 2 * 3 * 4 + 5 - 6 + 7 * 8 / 9 * 3 - 1 + 2";
+		postfix=InfixToPostfixWithoutPare(infix);
+		StdOut.println("Infix expression\t\""+infix+"\"\tis equivalent to postfix expression\t\""+postfix+"\"");
+		StdOut.println("-----------------------------------");
+		//test InfixToPostfix2
+		infix="3 + ( 2 - 5 ) * 6 / 3";
+		postfix=Expression.InfixToPostfix2(infix);
+		StdOut.println("Infix expression\t\""+infix+"\"\tis equivalent to postfix expression\t\""+postfix+"\"");
 	}
 }
