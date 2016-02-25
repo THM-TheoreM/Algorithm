@@ -5,7 +5,7 @@ import java.util.Arrays;
  * 1.4.6
  * a. O(N)
  * b. O(N)
- * c. O(N^2)
+ * c. O(NlogN)
  */
  
 public class ModifyRank
