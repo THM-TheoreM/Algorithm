@@ -127,6 +127,81 @@ public class ThrowingEggs
 		return cnt+cnt2;
 	}
 	
+	//distance between element of array
+	public static int[] distance(int N, int[] a)
+	{
+		int[] b=new int[a.length+1];
+		
+		b[0]=a[0];
+		b[a.length]=N-1-a[a.length-1]+a.length;
+		for(int i=1;i<a.length;i++)
+			b[i]=a[i]-a[i-1]+i;
+		
+		return b;
+	}
+	
+	//maximum of an array
+ 	public static int max(int[] a)
+	{
+		int index=a[0];
+		
+		for(int i=1;i<a.length;i++)
+			if(index<a[i]) index=a[i];
+			
+		return index;
+	}
+	
+	//smallest number fixed the first egg throwing number n
+	public static int[] best(int N, int n)
+	{
+		int[] a=new int[n];
+		
+		if(n==1)
+		{
+			a[0]=1;
+			
+			for(int i=1;i<=N-1;i++)
+			{
+				int[] b={i};
+				if(max(distance(N,a))>max(distance(N,b))) a=b;
+			}
+			
+			return a;
+		}
+		
+		for(int i=0;i<n;i++)
+			a[i]=i+1;
+		
+		for(int i=1;i<=N-n;i++)
+		{
+			int[] t=best(N-i,n-1);
+			int[] b=new int[n];
+			
+			b[0]=i;
+			for(int j=1;j<n;j++)
+				b[j]=t[j-1]+i;
+			
+			if(max(distance(N,a))>max(distance(N,b))) a=b;
+		}
+		
+		return a;
+	}
+	
+	//smallest number
+	public static int[] best(int N)
+	{
+		int[] a=best(N,1);
+		
+		for(int n=2;n<=N-1;n++)
+		{
+			int[] b=best(N,n);
+			
+			if(max(distance(N,a))>max(distance(N,b))) a=b;
+		}
+		
+		return a;
+	}
+	
 	public static void main(String[] args)
 	{	
 		int cnt;
@@ -164,5 +239,50 @@ public class ThrowingEggs
 			StdOut.print("102400-story building, F="+F+": ");
 			StdOut.println("\tusing "+TwoEggsFast(F,102400)+" times in total");
 		}
+		
+		StdOut.println("-------------------------------");
+		
+		int N=8;
+		
+		int[] a={1,2,3};
+		for(int x: a)
+			StdOut.print(x+" ");
+		StdOut.println();
+		for(int x: distance(N,a))
+			StdOut.print(x+" "); 
+		StdOut.println();
+		StdOut.println(max(distance(N,a)));
+		StdOut.println();
+		
+		a=best(N,3);
+		for(int x: a)
+			StdOut.print(x+" ");
+		StdOut.println();
+		for(int x: distance(N,a))
+			StdOut.print(x+" "); 
+		StdOut.println();
+		StdOut.println(max(distance(N,a)));
+		StdOut.println();
+		
+		a=best(N);
+		for(int x: a)
+			StdOut.print(x+" ");
+		StdOut.println();
+		for(int x: distance(N,a))
+			StdOut.print(x+" "); 
+		StdOut.println();
+		StdOut.println(max(distance(N,a)));
+		StdOut.println();
+		
+		int M=50;
+				StdDraw.setXscale(0,M);
+		StdDraw.setYscale(0,2*Math.sqrt(M));
+		StdDraw.setPenRadius(0.01);
+		
+		for(int i=2;i<=M;i++)
+			StdDraw.point(i,2*Math.sqrt(i));
+		
+		for(int i=2;i<=M;i++)
+			StdDraw.point(i,max(distance(i,best(i))));
 	}
 }
