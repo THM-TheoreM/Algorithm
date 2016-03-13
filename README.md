@@ -18,10 +18,10 @@
 
 **Somthing about Data Structure** There are many different abstract data types in Java's Algorithm, such as queue, stack, bag, sort, symbol table (or search). But actually they are all based on two basic types: one by one structure, and tree structure.
  - One by One
-   - array
-   - linked list
+   - Array
+   - Linked List
  - Tree
-   - Forest fo Tree
+   - Forest of Tree
    - Binary Heap: key in each node is larger than or equal to the key in that node's two children (if any)
    - Binary Search Tree: key in any node is larger that the keys in all nodes in that node's left subtree and smaller than the keys in all nodes in that node's right subtree
     
