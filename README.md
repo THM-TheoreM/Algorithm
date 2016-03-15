@@ -6,7 +6,10 @@
 
 **Notepad++** We use notepad++ nothing but cool.
 
-**Eclipse** You can download from the official website http://www.eclipse.org/downloads/, to choose between 32 bit and 64 bit, http://stackoverflow.com/questions/11461607/cant-start-eclipse-java-was-started-but-returned-exit-code-13 is very helpful! To start with the first project helloworld using Eclipse, you can refer to http://jingyan.baidu.com/article/48b558e373e1ea7f39c09a57.html.
+**Eclipse** 
+ - Installation: You can download from the official website http://www.eclipse.org/downloads/, to choose between 32 bit and 64 bit, it depends on your JAVA VERSION instead of your computer,  http://stackoverflow.com/questions/11461607/cant-start-eclipse-java-was-started-but-returned-exit-code-13 is very helpful! 
+ - Create a project: To start with the first project helloworld using Eclipse, you can refer to http://jingyan.baidu.com/article/48b558e373e1ea7f39c09a57.html. 
+ - Import an existing project: You can follow "File"→"Import"→"General"→"Existing Projects into Workspace".
 
 **Nppexec** 
     
