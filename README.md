@@ -1,4 +1,4 @@
-#Algorithm
+﻿#Algorithm
 
 **Introduction** This is algorithm learning based on java. The material is *Algorithm: Fourth Edition* written by Robert Sedgewick and Kevin Wayne. You can find the sources on http://algs4.cs.princeton.edu/home/, and you can find courses on https://www.coursera.org/course/algs4partI and https://www.coursera.org/course/algs4partII. In this learning program, we use notepad++ with nppexec to run java.
 
@@ -22,14 +22,16 @@
 
 **Push What** We will push some codes based on this book or our discussion.
 
-**Somthing about Data Structure** There are many different abstract data types in Java's Algorithm, such as queue, stack, bag, sort, symbol table (or search). But actually they are all based on two basic types: one by one structure, and tree structure.
+**Somthing about Data Structure and Algorithm** There are many different abstract data types in Java's Algorithm, such as queue, stack, bag, sort, symbol table (or search). But actually they are all based on two basic types: one by one structure, and tree structure.
  - One by One
    - Array
    - Linked List
  - Tree
    - Forest of Tree
-   - Binary Heap: key in each node is larger than or equal to the key in that node's two children (if any)
-   - Binary Search Tree: key in any node is larger that the keys in all nodes in that node's left subtree and smaller than the keys in all nodes in that node's right subtree
-    
+   - Binary Tree（二叉树）	
+   - Binary Heap（二叉堆）: key in each node is larger than or equal to the key in that node's two children (if any)
+   - Binary Search Tree（二叉搜索树）: key in any node is larger that the keys in all nodes in that node's left subtree and smaller than the keys in all nodes in that node's right subtree
+
+**Built-in Data Structure and Algorithm**
     
 
