@@ -28,9 +28,14 @@
    - Linked List
  - Tree
    - Forest of Tree
-   - Binary Tree（二叉树）	
-   - Binary Heap（二叉堆）: key in each node is larger than or equal to the key in that node's two children (if any)
-   - Binary Search Tree（二叉搜索树）: key in any node is larger that the keys in all nodes in that node's left subtree and smaller than the keys in all nodes in that node's right subtree
+   - Binary Tree(二叉树)
+   - Heap-Ordered Binary Tree: key in each node is larger than or equal to the key in that node's two children(if any)
+   - Binary Heap(二叉堆): complete heap-ordered binary tree
+   - Binary Search Tree(二叉搜索树): key in any node is larger that the keys in all nodes in that node's left subtree and smaller than the keys in all nodes in that node's right subtree
+   - 2-3 Tree
+   - 2-3 Search Tree: Page424
+   - Balanced 2-3 Search Tree: 2-3 tree whose null links are all the same distance from the root(red-black tree method to make balance)
+   - BTree
 
 **Built-in Data Structure and Algorithm**
     
