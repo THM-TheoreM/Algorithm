@@ -1,6 +1,7 @@
 import java.util.Arrays;
+import java.util.Comparator;
 
-public class StringSort 
+public class StringSort
 {	
 	//there exists one-liner of changes between String and char[]
 	//application: with the help of Arrays.sort, sorting a string will be quite easy
@@ -15,23 +16,26 @@ public class StringSort
 			char[] c=str.toCharArray();
 			Arrays.sort(c);
 			return new String(c);
-			
-			//Case Insensitive
-			/*char[] c=str.toCharArray();
-			String[] s=new String[c.length];
-			for(int i=0;i<c.length;i++)
-				s[i]=""+c[i];
-			Arrays.sort(s,String.CASE_INSENSITIVE_ORDER);
-			String ans="";
-			for(int i=0;i<c.length;i++)
-				ans+=s[i];
-			return ans;*/
 		}
 	}
 	
+	public static String insort(String str)
+	{
+		if(str==null || str.isEmpty())
+			return "Ïnvalid String";
+		else
+		{
+			//Case Insensitive
+			String[] s=str.split("");
+			Arrays.sort(s,String.CASE_INSENSITIVE_ORDER);
+			return String.join("",s);
+		}
+	}
+
 	public static void main(String args[]) 
 	{    
 		String s="dacbAC";
-		System.out.print(sort(s));
+		System.out.println(sort(s));
+		System.out.println(insort(s));
 	}			
-}    
+}
