@@ -6,12 +6,16 @@ public class StringSort
 	String a;
 	String[] b;
 	
+	
     public static String sensitive(String str)
 	{
 		if(str==null || str.isEmpty())
 			return "Ïnvalid String";
 		else
 		{
+			/*char[] c=str.toCharArray();
+			Arrays.sort(c);
+			return new String(c);*/
 			String[] s=str.split("");
 			Arrays.sort(s);
 			return String.join("",s);
