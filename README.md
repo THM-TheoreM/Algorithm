@@ -36,7 +36,5 @@
    - 2-3 Search Tree: Page424
    - Balanced 2-3 Search Tree: 2-3 tree whose null links are all the same distance from the root(red-black tree method to make balance)
    - BTree
-
-**Built-in Data Structure and Algorithm**
     
 
