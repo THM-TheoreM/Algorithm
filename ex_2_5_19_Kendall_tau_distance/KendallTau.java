@@ -32,15 +32,27 @@ public class KendallTau
 		for(Comparable x:sigma)
 			System.out.print(x.toString()+" ");
 		System.out.println();
+		
+		//generate int array tau^{-1}
 		int[] invTau=Index.sort(tau);
-		int[] Sigma=Index.sort(sigma);
+		
+		//make sigma to be an int array Sigma
+		int[] invsigma=Index.sort(sigma);
+		Integer[] invSigma=new Integer[invsigma.length];
+		for(int i=0;i<invsigma.length;i++)
+			invSigma[i]=invsigma[i];
+		int[] Sigma=Index.sort(invSigma); 
+		
+		//ans=tau^{-1}*Sigma, let it be an Integer array instead of an int one so that Index.inversion can take it as an input parameter
 		Integer[] ans=new Integer[sigma.length];
 		for(int i=0;i<sigma.length;i++)
 			ans[i]=invTau[Sigma[i]];
-		/*System.out.print("invTau*Sigma=");
+		/*//Explictly show invTau*Sigma not in the form of an int array but of a Comparable array
+		System.out.print("invTau*Sigma=");
 		for(int i=0;i<sigma.length;i++)
 			System.out.print(tau[invTau[ans[i]]]+" ");
-		System.out.println();*/
+		System.out.println();
+		*/
 		System.out.println("equals "+Index.inversion(ans));
 	}
 	
