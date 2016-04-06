@@ -40,22 +40,22 @@
  - Graph
    - Graph.java
    - int numberOfSelfLoops(Graph G)
-
-    public static int numberOfSelfLoops(Graph G)
-    {
-	    int count=0;
-	    for(int v=0;v<G.V();v++)
-		    for(int w: G.adj(v))
-			    if(w==v) count++;
-		    return count/2;
-    }
-
+      
+     public static int numberOfSelfLoops(Graph G)
+     {
+	     int count=0;
+	     for(int v=0;v<G.V();v++)
+		     for(int w: G.adj(v))
+			     if(w==v) count++;
+		     return count/2;
+     }
+     
    - int numberOfParallerEdge(int v, int w)
-
-    public static int numberOfParallelEdge(int v, int w)
-    {
-	    int count=0;
-	    for(int i: G.adj(v))
-		    if(i==w) count++;
-	    return count;
-    }
+     
+     public static int numberOfParallelEdge(int v, int w)
+     {
+	     int count=0;
+	     for(int i: G.adj(v))
+		     if(i==w) count++;
+	     return count;
+     }
