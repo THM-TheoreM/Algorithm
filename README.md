@@ -50,7 +50,7 @@
      }
 ```
 ```java
-     public static int numberOfParallelEdge(int v, int w)
+     public static int numberOfParallelEdge(Graph G, int v, int w)
      {
 	    int count=0;
 	    for(int i: G.adj(v))
