@@ -39,3 +39,9 @@
    - BTree
  - Graph
    - Graph.java
+
+    import a;
+    
+    public class b
+   {
+    }
