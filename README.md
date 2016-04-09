@@ -27,7 +27,6 @@
    - Array
    - Linked List
  - Tree
-   - Forest of Tree
    - Binary Tree(二叉树)
    - Heap-Ordered Binary Tree: key in each node is larger than or equal to the key in that node's two children(if any)
    - Binary Heap(二叉堆): complete heap-ordered binary tree
@@ -38,7 +37,8 @@
    - Balanced 2-3 Search Tree: 2-3 tree whose null links are all the same distance from the root
    - BTree
  - Graph
-   - Graph.java
+   - UF
+   - Graph\DepthFirstSearch\DepthFirstPath\BreathFirstPaths\CC
 ```java
      public static int numberOfSelfLoops(Graph G)
      {
