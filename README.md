@@ -62,7 +62,7 @@
      public class TwoColor
      {
             private boolean[] marked;
-	    private boolean[] color;
+            private boolean[] color;
             private boolean isTwoColorable=True;
             
             public TwoColor(Graph G)
