@@ -38,7 +38,7 @@
    - BTree
  - Graph
    - UF
-   - Graph\DFS\DFP\BFP\CC\Cycle
+   - Graph\DFS\DFP\BFP\CC\Cycle\Bipartite\BipartiteX\BipartiteMatching\GraphGenerator\EulerianPath\EullerianCycle
 ```java
      public static int numberOfSelfLoops(Graph G)
      {
@@ -52,40 +52,19 @@
 ```java
      public static int numberOfParallelEdges(Graph G, int v, int w)
      {
-	    int count=0;
+	    int count=0;b
 	    for(int i: G.adj(v))
 		    if(i==w) count++;
 	    return count;
      }
 ```
-```java
-     public class TwoColor
-     {
-            private boolean[] marked;
-            private boolean[] color;
-            private boolean isTwoColorable=True;
-            
-            public TwoColor(Graph G)
-            {
-                   marked=new boolean[G.V()];
-                   color=new boolean[G.V()];
-                   for(int s=0;s<G.V();s++)
-                           if(!marked[s]) dfs(G,s);
-            }
 
-            private void dfs(Graph G, int v)
-            {
-                    marked[v]=true;
-                    for(int w: G.adj(v))
-                            if(!marked[w])
-                            {
-                                    color[w]=!color[v];
-                                    dfs(G,w);
-                            }
-                            else if(color[w]==color[v]) isTwoColorable=false;
-            }
+   - SymbolGraph\DegreeOfSeparation
 
-            public boolean isBipartite()
-            {return isTwoColorable;}
-     }
-```
+   - Digraph\DDFS\DFDP\BFDP\SCC\DirectCycle\DirectCycleX\DepthFirstOrder\Topological\TopologicalX\TransitiveClosure\DiGraphGenerator\DirectEulerianPath\DirectEulerianCycle
+
+   - SymbolDiGraph
+
+   - Edge\EdgeWeightedGraph\EdgeWeightDirectedCycle\LazyPrimeMST\PrimeMST\KruskalMST\DijkstraUndirectSP
+
+   - DirectEdge\EdgeWeightedDigraph\AdjMatrixEdgeWeightDiGraph\DijkstraSP\DijkstraAllPairSP\AcyclicLP\AcyclicSP\BellmanFordSP
