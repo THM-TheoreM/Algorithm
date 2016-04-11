@@ -39,6 +39,11 @@
  - Graph
    - UF
    - Graph\DFS\DFP\BFP\CC\Cycle\Bipartite\BipartiteX\BipartiteMatching\GraphGenerator\EulerianPath\EullerianCycle
+   - SymbolGraph\DegreeOfSeparation
+   - Digraph\DDFS\DFDP\BFDP\SCC\DirectCycle\DirectCycleX\DepthFirstOrder\Topological\TopologicalX\TransitiveClosure\DiGraphGenerator\DirectEulerianPath\DirectEulerianCycle
+   - SymbolDiGraph
+   - Edge\EdgeWeightedGraph\EdgeWeightDirectedCycle\LazyPrimeMST\PrimeMST\KruskalMST\DijkstraUndirectSP
+   - DirectEdge\EdgeWeightedDigraph\AdjMatrixEdgeWeightDiGraph\DijkstraSP\DijkstraAllPairSP\AcyclicLP\AcyclicSP\BellmanFordSP
 ```java
      public static int numberOfSelfLoops(Graph G)
      {
@@ -58,13 +63,3 @@
 	    return count;
      }
 ```
-
-   - SymbolGraph\DegreeOfSeparation
-
-   - Digraph\DDFS\DFDP\BFDP\SCC\DirectCycle\DirectCycleX\DepthFirstOrder\Topological\TopologicalX\TransitiveClosure\DiGraphGenerator\DirectEulerianPath\DirectEulerianCycle
-
-   - SymbolDiGraph
-
-   - Edge\EdgeWeightedGraph\EdgeWeightDirectedCycle\LazyPrimeMST\PrimeMST\KruskalMST\DijkstraUndirectSP
-
-   - DirectEdge\EdgeWeightedDigraph\AdjMatrixEdgeWeightDiGraph\DijkstraSP\DijkstraAllPairSP\AcyclicLP\AcyclicSP\BellmanFordSP
