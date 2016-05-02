@@ -1,16 +1,16 @@
 # Library
 
-- **API** You can find java api on orcal and download it by http://jingyan.baidu.com/article/a3aad71ac9e48fb1fb009692.html
+**API** You can find java api on orcal and download it by http://jingyan.baidu.com/article/a3aad71ac9e48fb1fb009692.html
 
-- **applet**
-   - http://www.runoob.com/java/java-applet-basics.html
+**applet**
+  - http://www.runoob.com/java/java-applet-basics.html
 
-- **awt/swing**
+**awt/swing**
 
-- **bean**
-   - https://www.zhihu.com/question/19773379
+**bean**
+  - https://www.zhihu.com/question/19773379
 
-- **io/nio**
+**io/nio**
  
 1. difference between io and nio: 
    - http://tutorials.jenkov.com/java-nio/nio-vs-io.html
@@ -22,7 +22,7 @@
 3. nio
    - http://tutorials.jenkov.com/java-nio/index.html
 
-- **lang/util**
+**lang/util**
 
 1. what are java.lang and java.util
    - http://zhidao.baidu.com/link?url=cX4JHqmXoRcwTj_SD9i7U5dPH907j8gbz-GA0Vca6eUus_cbpi8fG6PMJMcL1ChwXZCc4L8LLp2eBsmXnL9Pa_
@@ -48,28 +48,28 @@
 
 6. regular expression
 
-- **math** 
-   - java.math/java.lang.Math: http://zhidao.baidu.com/link?url=j7jpf_PWDEQ4RFooTdxYkuitRLwFvvWeA6-14ZJ8oQSQvHBNiSZqL0oDNN6UttcRRn7tnLjBIfjSn4MKUQG5-_
+**math** 
+  - java.math/java.lang.Math: http://zhidao.baidu.com/link?url=j7jpf_PWDEQ4RFooTdxYkuitRLwFvvWeA6-14ZJ8oQSQvHBNiSZqL0oDNN6UttcRRn7tnLjBIfjSn4MKUQG5-_
 
-- **net**
+**net**
   - http://www.runoob.com/java/java-networking.html
 
-- **rmi**
+**rmi**
   - http://baike.baidu.com/link?url=n9y7wBRTZhWp7EEm7nO_7gU6KDM4TRPjCtURSwQ1PTsHkFJBRrYXAgZjrGuCh_LvYkUfLBsmbQ3L7l5v9FZ7gK
 
-- **security**
+**security**
   - be used for security
   - http://joshuasabrina.iteye.com/blog/1798245
   - http://www.cnblogs.com/sharpxiajun/archive/2011/09/27/2192442.html
 
-- **sql**
+**sql**
   - be used by database
   - http://blog.sina.com.cn/s/blog_4d8648910102vagq.html
 
-- **text**
+**text**
   - be used to format
   - http://baike.baidu.com/link?url=twieKOJgR16833Zp-xCjFcqomOl5Ue6Q37CXnB0-kTmA9Y3-UT3r4M7tvgX2pTM--owcDIQYQ_wEk_h-n_p1EK
   - http://blog.chinaunix.net/uid-7940057-id-2036602.html
 
-- **time**
+**time**
   - java.time/java.util.Date: http://wen866595.iteye.com/blog/1958475
