@@ -1,8 +1,12 @@
-# Java-swing-and-awt
+﻿# awt/swing
 
 **介绍**
 
 - http://www.yiibai.com/swing/home.html
+
+**awt**
+
+awt中有事件处理（event），事件监听器（listener），事件适配器（adapter）
 
 **swing**
 
@@ -12,6 +16,3 @@
 
 JFrame内可含有两种东西：容器（container）和组件（component）
 
-**awt**
-
-awt中有事件处理（event），事件监听器（listener），事件适配器（adapter）
