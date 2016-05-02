@@ -1,3 +1,3 @@
 # Practice
 
-**Codewar**: http://www.codewars.com/dashboard
+**Codewar** http://www.codewars.com/dashboard
