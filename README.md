@@ -2,13 +2,10 @@
 
 **Java API** You can find java api on orcal and download it by http://jingyan.baidu.com/article/a3aad71ac9e48fb1fb009692.html
 
-**Practice** You can parctice on codewar http://www.codewars.com/dashboard
-
 - **applet**
    - http://www.runoob.com/java/java-applet-basics.html
 
 - **awt/swing**
-   - https://github.com/gaoxinge/Java-swing-and-awt
 
 - **bean**
    - https://www.zhihu.com/question/19773379
@@ -50,9 +47,6 @@
    - material: http://www.runoob.com/java/java-date-time.html
 
 6. regular expression
-   - java.util.regex
-   - material1: http://www.runoob.com/java/java-regular-expressions.html
-   - material2: https://github.com/gaoxinge/Java-regular-expression
 
 - **math** 
    - java.math/java.lang.Math: http://zhidao.baidu.com/link?url=j7jpf_PWDEQ4RFooTdxYkuitRLwFvvWeA6-14ZJ8oQSQvHBNiSZqL0oDNN6UttcRRn7tnLjBIfjSn4MKUQG5-_
