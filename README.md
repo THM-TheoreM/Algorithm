@@ -1,6 +1,6 @@
-# Java Library
+# Library
 
-**Java API** You can find java api on orcal and download it by http://jingyan.baidu.com/article/a3aad71ac9e48fb1fb009692.html
+- **API** You can find java api on orcal and download it by http://jingyan.baidu.com/article/a3aad71ac9e48fb1fb009692.html
 
 - **applet**
    - http://www.runoob.com/java/java-applet-basics.html
