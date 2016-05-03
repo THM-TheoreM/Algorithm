@@ -1,24 +1,8 @@
-﻿#Algorithm
+﻿# Algorithm
 
-**Introduction** This is algorithm learning based on java. The material is *Algorithm: Fourth Edition* written by Robert Sedgewick and Kevin Wayne. You can find the sources on http://algs4.cs.princeton.edu/home/, and you can find courses on https://www.coursera.org/course/algs4partI and https://www.coursera.org/course/algs4partII. In this learning program, we use notepad++ with nppexec to run java.
+**Introduction** This is algorithm learning based on java. The material is *Algorithm: Fourth Edition* written by Robert Sedgewick and Kevin Wayne. You can find the sources on http://algs4.cs.princeton.edu/home/, and you can find courses on https://www.coursera.org/course/algs4partI and https://www.coursera.org/course/algs4partII.
 
-**Java** You can download java and textbook libraries from http://algs4.cs.princeton.edu/code/. If you are not good at Java, you can follow another introductory text, *An Intruduction to Programming in Java: An Interdisciplinary Approach*.
-
-**Notepad++** We use notepad++ nothing but cool.
-
-**Nppexec** 
-    
-    NPP_SAVE
-    javac -encoding UTF-8 "$(FULL_CURRENT_PATH)"
-    echo
-    echo ==========编译成功后开始运行========== 
-    java -cp "$(CURRENT_DIRECTORY);D:\Program Files\java\jdk\lib\algs4.jar" "$(NAME_PART)"
-    
-
-**Eclipse** 
- - Installation: You can download from the official website http://www.eclipse.org/downloads/, to choose between 32 bit and 64 bit, it depends on your JAVA VERSION instead of your computer,  http://stackoverflow.com/questions/11461607/cant-start-eclipse-java-was-started-but-returned-exit-code-13 is very helpful! 
- - Create a project: To start with the first project helloworld using Eclipse, you can refer to http://jingyan.baidu.com/article/48b558e373e1ea7f39c09a57.html. 
- - Import an existing project: You can follow "File"→"Import"→"General"→"Existing Projects into Workspace".
+**Textbook Library** You can download textbook libraries from http://algs4.cs.princeton.edu/code/.
 
 **Push What** We will push some codes based on this book or our discussion.
 
