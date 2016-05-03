@@ -18,5 +18,10 @@
  - Create a project: To start with the first project helloworld using Eclipse, you can refer to http://jingyan.baidu.com/article/48b558e373e1ea7f39c09a57.html. 
  - Import an existing project: You can follow "File"¡ú"Import"¡ú"General"¡ú"Existing Projects into Workspace".
 
-**Practice** 
- - Codewar: http://www.codewars.com/dashboard
+**xe**
+
+Place something simple but interesting.
+
+**codewar** 
+
+ - http://www.codewars.com/dashboard
