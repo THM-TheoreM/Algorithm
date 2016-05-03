@@ -20,6 +20,4 @@
 
 **xe** Place something simple but interesting.
 
-**codewar** 
-
- - http://www.codewars.com/dashboard
+**codewar** http://www.codewars.com/dashboard
