@@ -1,6 +1,6 @@
-# lang/util
+Ôªø# lang/util
 
-**ΩÈ…‹**
+**‰ªãÁªç**
 
   - http://zhidao.baidu.com/link?url=cX4JHqmXoRcwTj_SD9i7U5dPH907j8gbz-GA0Vca6eUus_cbpi8fG6PMJMcL1ChwXZCc4L8LLp2eBsmXnL9Pa_
 
@@ -15,3 +15,5 @@
   - http://baike.baidu.com/link?url=UjPsIhmaWjf36oy7dk_HWbv4j0Xvg1q5a4s5Obea4CKt40JACrK-DX_VymFD2qjl6NiNLrCdxIzI5XHClSYDZ_
      
   - http://blog.csdn.net/abeetle/article/details/1497706
+
+
