@@ -2,11 +2,11 @@
 
 ## API
 
-- You can find java api on orcal and download it
+这个可以从Oracle官网上下的到：
 
 - http://jingyan.baidu.com/article/a3aad71ac9e48fb1fb009692.html
 
-## Content
+## 目录
 
 - [applet](https://github.com/THM-TheoreM/Java/tree/library/applet)
   
