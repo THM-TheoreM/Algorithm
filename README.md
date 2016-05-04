@@ -18,12 +18,6 @@
  
 - [lang/util](https://github.com/THM-TheoreM/Java/tree/library/lang%20util)
 
-  - [thread](https://github.com/THM-TheoreM/Java/tree/library/lang%20util/thread)
-
-  - [date](https://github.com/THM-TheoreM/Java/tree/library/lang%20util/date)
-
-  - [regular expression](https://github.com/THM-TheoreM/Java/tree/library/lang%20util/regular%20expression)
-
 - [math](https://github.com/THM-TheoreM/Java/tree/library/math)  
 
 - [net](https://github.com/THM-TheoreM/Java/tree/library/net)

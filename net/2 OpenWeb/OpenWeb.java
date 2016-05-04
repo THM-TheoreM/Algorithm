@@ -2,7 +2,7 @@ import java.net.*;
 import java.io.*;
 import java.awt.*;
 
-public class OpenWeb2{
+public class OpenWeb{
 	public static void main(String[] args){
 
 		try{
