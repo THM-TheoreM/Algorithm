@@ -20,4 +20,16 @@
 
 **xe** Place something simple but interesting.
 
+- [calculate](https://github.com/THM-TheoreM/Java/tree/master/xe_calculate)
+
+- [shuffle](https://github.com/THM-TheoreM/Java/tree/master/xe_shuffle)
+
+- [sorting](https://github.com/THM-TheoreM/Java/tree/master/xe_sorting)
+
+- [game](https://github.com/THM-TheoreM/Java/tree/master/xe_game)
+
 **codewar** http://www.codewars.com/dashboard
+
+- [PhoneDir](https://github.com/THM-TheoreM/Java/tree/master/codewar_PhoneDir)
+
+- [StringSort](https://github.com/THM-TheoreM/Java/tree/master/codewar_StringSort)
