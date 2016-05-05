@@ -20,6 +20,8 @@
 
   - [algorithm](https://github.com/THM-TheoreM/Java/tree/library/lang%20util/algorithm)
 
+  - [math/random](https://github.com/THM-TheoreM/Java/tree/library/lang%20util/math%20random)
+
   - [timetask](https://github.com/THM-TheoreM/Java/tree/library/lang%20util/timetask)
 
   - [date](https://github.com/THM-TheoreM/Java/tree/library/lang%20util/date) 
