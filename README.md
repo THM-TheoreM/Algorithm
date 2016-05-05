@@ -26,6 +26,22 @@
 
 - [sorting](https://github.com/THM-TheoreM/Java/tree/master/xe_sorting)
 
+  - [selection sort](https://github.com/THM-TheoreM/Java/tree/master/xe_sorting/1%20selection%20sort)
+
+  - [bubble sort](https://github.com/THM-TheoreM/Java/tree/master/xe_sorting/2%20bubble%20sort)
+
+  - [insertion sort](https://github.com/THM-TheoreM/Java/tree/master/xe_sorting/3%20insertion%20sort)
+
+  - [shell sort](https://github.com/THM-TheoreM/Java/tree/master/xe_sorting/4%20shell%20sort)
+
+  - [merge sort](https://github.com/THM-TheoreM/Java/tree/master/xe_sorting/5%20merge%20sort)
+
+  - [merge sort](https://github.com/THM-TheoreM/Java/tree/master/xe_sorting/6%20merge%20sort)
+
+  - [quick sort](https://github.com/THM-TheoreM/Java/tree/master/xe_sorting/7%20quick%20sort)
+
+  - [quick 3-way sort](https://github.com/THM-TheoreM/Java/tree/master/xe_sorting/8%20quick%203-way%20sort) 
+
 - [game](https://github.com/THM-TheoreM/Java/tree/master/xe_game)
 
 **codewar** http://www.codewars.com/dashboard
