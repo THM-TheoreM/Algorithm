@@ -18,6 +18,14 @@
  
 - [lang/util](https://github.com/THM-TheoreM/Java/tree/library/lang%20util)
 
+  - [timetask](https://github.com/THM-TheoreM/Java/tree/library/lang%20util/timetask)
+
+  - [date](https://github.com/THM-TheoreM/Java/tree/library/lang%20util/date) 
+
+  - [thread](https://github.com/THM-TheoreM/Java/tree/library/lang%20util/thread)
+
+  - [regular expression](https://github.com/THM-TheoreM/Java/tree/library/lang%20util/regular%20expression)
+
 - [math](https://github.com/THM-TheoreM/Java/tree/library/math)  
 
 - [net](https://github.com/THM-TheoreM/Java/tree/library/net)
