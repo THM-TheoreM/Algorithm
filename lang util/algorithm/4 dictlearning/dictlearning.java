@@ -5,7 +5,7 @@ import java.util.*;
  * http://www.yiibai.com/java/util/java_util_dictionary.html
  */
  
-public class diclearning
+public class dictlearning
 {
 	public static void main(String[] args)
 	{
