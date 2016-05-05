@@ -18,6 +18,8 @@
  
 - [lang/util](https://github.com/THM-TheoreM/Java/tree/library/lang%20util)
 
+  - [algorithm](https://github.com/THM-TheoreM/Java/tree/library/lang%20util/algorithm)
+
   - [timetask](https://github.com/THM-TheoreM/Java/tree/library/lang%20util/timetask)
 
   - [date](https://github.com/THM-TheoreM/Java/tree/library/lang%20util/date) 
