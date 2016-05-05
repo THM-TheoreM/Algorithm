@@ -44,6 +44,8 @@
 
 - [game](https://github.com/THM-TheoreM/Java/tree/master/xe_game)
 
+  - [SnakeEatApple](https://github.com/THM-TheoreM/Java/tree/master/xe_game/1%20SnakeEatApple)
+
 **codewar** http://www.codewars.com/dashboard
 
 - [PhoneDir](https://github.com/THM-TheoreM/Java/tree/master/codewar_PhoneDir)
