@@ -7,7 +7,7 @@ public class URLDemo
 	{
 		try{
 			URL url = new URL("http://www.w3cschool.cc/index.html?language=cn#j2se");
-			System.out.println("URL is " + url.toString());
+			System.out.println("URL is " + url);
 			System.out.println("protocol is " + url.getProtocol());
 			System.out.println("authority is " + url.getAuthority());
 			System.out.println("file name is " + url.getFile());
@@ -18,8 +18,6 @@ public class URLDemo
 			System.out.println("query is " + url.getQuery());
 			System.out.println("ref is " + url.getRef());
 		} catch(IOException e)
-		{
-			e.printStackTrace();
-		}
+		{e.printStackTrace();}
 	}
 }
