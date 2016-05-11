@@ -1,6 +1,8 @@
 ﻿# io/nio
 
 **介绍**
+
+io与nio都是对文件进行打开，读写以及输入，输出等处理。他们的区别主要在于对缓冲（buffer）和阻塞（blocking）的处理方式
  
   - http://zhidao.baidu.com/link?url=o9wecyPxirVatBv84a0z-w-9WtvG-B_eWCtSbi7j6INpaHKwj3yuYM4PB9Ucf-QAzl7sNSugZRyxPDCj_5yocb0R8pvbWV1nPACi0yR5VSO
 
