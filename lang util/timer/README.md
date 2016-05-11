@@ -1,3 +1,3 @@
 ﻿# timer
 
-java.util.timer实现计时器的类
+java.util.timer计时器类
