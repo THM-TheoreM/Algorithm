@@ -42,6 +42,10 @@
 
 - [net](https://github.com/THM-TheoreM/Java/tree/library/net)
 
+  - [url/uri](https://github.com/THM-TheoreM/Java/tree/library/net/url%20uri)
+
+  - [socket](https://github.com/THM-TheoreM/Java/tree/library/net/socket)
+
 - [rmi](https://github.com/THM-TheoreM/Java/tree/library/rmi)
 
 - [security](https://github.com/THM-TheoreM/Java/tree/library/security)
