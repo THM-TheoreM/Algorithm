@@ -1,12 +1,21 @@
 ﻿# Algorithm
 
-**Introduction** This is algorithm learning based on java. The material is *Algorithm: Fourth Edition* written by Robert Sedgewick and Kevin Wayne. You can find the sources on http://algs4.cs.princeton.edu/home/, and you can find courses on https://www.coursera.org/course/algs4partI and https://www.coursera.org/course/algs4partII.
+## Introduction
 
-**Textbook Library** You can download textbook libraries from http://algs4.cs.princeton.edu/code/.
+This is algorithm learning based on java. The material is *Algorithm: Fourth Edition* written by Robert Sedgewick and Kevin Wayne. You can find the sources on http://algs4.cs.princeton.edu/home/, and you can find courses on https://www.coursera.org/course/algs4partI and https://www.coursera.org/course/algs4partII.
 
-**Push What** We will push some codes based on this book or our discussion.
+##Textbook Library
 
-**Somthing about Data Structure and Algorithm** There are many different abstract data types in Java's Algorithm, such as queue, stack, bag, sort, symbol table (or search). But actually they are all based on two basic types: one by one structure, and tree structure.
+You can download textbook libraries from http://algs4.cs.princeton.edu/code/.
+
+## Push What
+
+We will push some codes based on this book or our discussion.
+
+## Somthing about Data Structure and Algorithm 
+
+There are many different abstract data types in Java's Algorithm, such as queue, stack, bag, sort, symbol table (or search). But actually they are all based on two basic types: one by one structure, and tree structure.
+
  - One by One
    - Array
    - Linked List
