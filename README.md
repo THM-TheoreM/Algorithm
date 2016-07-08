@@ -28,8 +28,8 @@ We use notepad++ nothing but cool.
 
 ## Ŀ¼
 
-- [xe]()
+- [xe](https://github.com/THM-TheoreM/Java/tree/master/xe)
 
 - [codewar](http://www.codewars.com/dashboard)
 
-- [tool]()
+- [tool](https://github.com/THM-TheoreM/Java/tree/master/tool)
